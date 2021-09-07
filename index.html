@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="assets/img/logoLibro.png" class="me-5" alt="logo" height="40"><a class="navbar-brand" href="#">MundoLibro</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="mantieneLibrosBasico.html">Mantenedor Básico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Libros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <section class="container my-5">
+
+        <form id="miFormulario" method="GET">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Titulo Libro:</label>
+              <input type="text" class="form-control" id="nombre" >
+            </div>
+            <div class="mb-3">
+                <label for="autor" class="form-label" >Autor:</label>
+                <input type="text" class="form-control" id="autor" >
+              </div>
+              <div class="mb-3">
+                <label for="precio" class="form-label">Precio:</label>
+                <input type="text" class="form-control" id="precio" >
+              </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+
+        <table id="miTabla" class="table my-4">
+        </table>
+    </section>
+    
+
+    <footer class="py-5 text-white text-center bg-dark mt-2 fixed-bottom">
+        MundoLibro 2021
+    </footer>
+    <!--js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--mi js-->
+    <script src="assets/js/script2.js"></script>
+</body>
+</html>
